@@ -1,0 +1,27 @@
+
+
+(defpoll network_jons :interval "1s"
+              :initial "initial-value"  ; optional, defaults to poll at startup
+              :run-while true   ; optional, defaults to 'true'
+  `ip -j addr show`)
+
+
+(defwidget network []
+  (box
+    :class "network"
+    :halign "center"
+    :space-evenly false
+    :orientation "h"
+    (eventbox
+      :width "30"
+      :height "30"
+      :class "network_icon"
+      ; :
+    )
+    (label
+      :text {jq(network_jons, `.[] | select(.ifname == "wlp0s20f3") | .addr_info[]|select(.family == "inet")| .local`) }
+    )
+  )
+)
+
+
