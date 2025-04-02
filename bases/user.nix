@@ -11,6 +11,7 @@
       "networkmanager"
       "wheel"
       "wireshark"
+      "storage"
     ];
     packages = with pkgs; [ ];
   };

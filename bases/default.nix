@@ -16,6 +16,7 @@
     ./pkgs.nix
     ./proxy
     ./fcitx5.nix
+    ./udisks.nix
     ./wine.nix
     ./zsh.nix
   ];
