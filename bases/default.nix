@@ -7,6 +7,7 @@
     ./virtualisation
 
     ./display-manager.nix
+    
     ./configuration.nix
     ./nvidia.nix
     ./audio.nix

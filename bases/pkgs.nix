@@ -12,8 +12,6 @@
     rkdeveloptool
     nix-index
     nix-tree
-
     ccze
-
   ];
 }

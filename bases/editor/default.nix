@@ -5,7 +5,10 @@
   ...
 }:
 {
-  imports = [ ./jdk.nix ];
+  imports = [
+    ./jdk.nix
+    ./rust.nix
+  ];
   environment.systemPackages = with pkgs; [
     python3Full
     uv

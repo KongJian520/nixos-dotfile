@@ -4,8 +4,7 @@
     (flameshot.override { enableWlrSupport = true; })
 
     ventoy-bin-full
-
-    thunarbird
+thunderbird
 
     qbittorrent
     wpsoffice-cn
@@ -77,4 +76,5 @@
     #   pciutils # lspci
     #   usbutils # lsusb
   ];
+
 }

@@ -1,10 +1,13 @@
-{ pkgs, ... }: # 简化参数声明
+{ pkgs, config, ... }:
+
 {
-  home.packages = with pkgs.xfce; [
-    thunar
-    thunar-archive-plugin
-    thunar-vcs-plugin
-    thunar-volman
-    thunar-media-tags-plugin
+  # 添加必要的包
+  home.packages = with pkgs; [
+    nautilus
+    nautilus-open-any-terminal
+    sushi
+    code-nautilus
+    turtle
   ];
+
 }

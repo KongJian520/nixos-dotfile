@@ -5,6 +5,7 @@
     enableCompletion = true;
     autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
+
     ohMyZsh = {
       enable = true;
       plugins = [
@@ -12,6 +13,7 @@
       ];
       theme = "robbyrussell";
     };
+    
     shellAliases = {
       ll = "ls -l";
       update = "sudo nixos-rebuild switch -L |& nom";

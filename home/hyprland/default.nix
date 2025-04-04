@@ -10,6 +10,7 @@
     # hyprls
     # gwenview
     hyprlock
+    hypridle
     dconf
     xdg-desktop-portal-hyprland
     wayland

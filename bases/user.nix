@@ -3,7 +3,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.kongjian = {
     isNormalUser = true;
-    shell=pkgs.zsh;
+    shell = pkgs.zsh;
     description = "kongjian";
     extraGroups = [
       "audio"
@@ -14,5 +14,7 @@
       "storage"
     ];
     packages = with pkgs; [ ];
+
   };
+  security.sudo.wheelNeedsPassword = false;
 }
