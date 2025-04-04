@@ -2,10 +2,10 @@
 {
   home.packages = with pkgs; [
     (flameshot.override { enableWlrSupport = true; })
-
+    direnv
     ventoy-bin-full
-thunderbird
-
+    thunderbird
+    ags
     qbittorrent
     wpsoffice-cn
     qq

@@ -1,5 +1,10 @@
 { lib, ... }:
 {
+  programs.direnv = {
+    enable = true;
+    enableZshIntegration = true;
+    loadInNixShell = true;
+  };
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -13,7 +18,7 @@
       ];
       theme = "robbyrussell";
     };
-    
+
     shellAliases = {
       ll = "ls -l";
       update = "sudo nixos-rebuild switch -L |& nom";

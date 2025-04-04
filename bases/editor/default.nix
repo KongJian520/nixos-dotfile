@@ -7,9 +7,10 @@
 {
   imports = [
     ./jdk.nix
-    ./rust.nix
+    # ./rust.nix
   ];
   environment.systemPackages = with pkgs; [
+    direnv
     python3Full
     uv
     jetbrains.clion

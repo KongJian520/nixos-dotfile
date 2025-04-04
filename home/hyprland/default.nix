@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  inputs,
-  ...
-}:
+{ inputs, pkgs, ... }:
 {
 
   home.packages = with pkgs; [
@@ -29,9 +24,6 @@
     extraConfig = ''
       source = ./default.conf
     '';
-    plugins = [
-
-    ];
   };
 
   home.pointerCursor = {
