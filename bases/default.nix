@@ -7,7 +7,7 @@
     ./virtualisation
 
     ./display-manager.nix
-    
+    ./bluetooth.nix
     ./configuration.nix
     ./nvidia.nix
     ./audio.nix
