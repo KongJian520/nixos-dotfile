@@ -5,6 +5,7 @@
   ...
 }:
 {
+
   home.packages = with pkgs; [
     # hyprls
     # gwenview
@@ -14,10 +15,6 @@
     wayland
     fuzzel
     swww
-    xfce.thunar
-    xfce.thunar-archive-plugin
-
-
   ];
   home.file.".config/hypr/" = {
     source = ./.config/hypr;
@@ -31,6 +28,39 @@
     extraConfig = ''
       source = ./default.conf
     '';
+    plugins = [
+
+    ];
+  };
+
+  home.pointerCursor = {
+    package = pkgs.bibata-cursors;
+    name = "Bibata-Modern-Ice";
+    hyprcursor = {
+      size = 32;
+      enable = true;
+    };
+  };
+  gtk = {
+    enable = true;
+
+    theme = {
+      package = pkgs.flat-remix-gtk;
+      name = "Flat-Remix-GTK-Grey-Darkest";
+    };
+    cursorTheme = {
+      package = pkgs.bibata-cursors;
+      name = "Bibata-Modern-Ice";
+    };
+    iconTheme = {
+      package = pkgs.adwaita-icon-theme;
+      name = "Adwaita";
+    };
+
+    font = {
+      name = "Sans";
+      size = 11;
+    };
   };
 
   programs.hyprlock = {

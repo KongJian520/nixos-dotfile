@@ -16,6 +16,7 @@
     ./alacritty
     ./nixvim
     ./thunar
+    ./nautilus
   ];
   home.username = "kongjian";
   home.homeDirectory = "/home/kongjian";
