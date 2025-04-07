@@ -7,7 +7,7 @@
     noto-fonts-cjk-sans
     noto-fonts-emoji
     noto-fonts-cjk-serif
-
+    wqy_zenhei # 添加文泉驿字体
     liberation_ttf
     fira-code
     fira-code-symbols
