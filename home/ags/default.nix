@@ -7,7 +7,10 @@
 }:
 {
   home.packages = with pkgs; [
-    pkg-config
-    cmake
+    ags
   ];
+  home.file.".config/ags/" = {
+    source = ./config;
+    recursive = true; # 递归整个文件夹
+  };
 }

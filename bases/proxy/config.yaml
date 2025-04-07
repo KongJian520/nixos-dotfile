@@ -6,6 +6,27 @@ log-level: info
 unified-delay: true
 tcp-concurrent: true
 external-controller: '127.0.0.1:9090'
+tun:
+  enable: true
+  stack: system    # 系统栈（Linux/macOS通用）
+  device: utun     # 自动分配设备名（Windows需改为wintun）
+  auto-route: true
+  auto-redirect: true
+  mtu: 1500        # 通用MTU值（避免某些网络问题）
+  strict-route: true
+  dns-hijack:
+    - any:53        # 劫持所有DNS查询
+  # 路由优化配置
+  route-address:
+    - 0.0.0.0/1
+    - 128.0.0.0/1
+    - "::/1"
+    - "8000::/1"
+  route-exclude-address:
+    - 10.0.0.0/8    # 排除私有网络
+    - 172.16.0.0/12
+    - 192.168.0.0/16
+    - fc00::/7
 dns:
     enable: true
     ipv6: false
