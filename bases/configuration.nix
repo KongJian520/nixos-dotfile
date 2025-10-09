@@ -24,7 +24,7 @@
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
-  networking.proxy.default = "http://127.0.0.1:7890/";
+  networking.proxy.default = "http://192.168.31.150:10810/";
   networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
   services.resolved.enable = true;
   # Enable networking
@@ -81,6 +81,6 @@
     git
   ];
   security.polkit.enable = true;
-  system.stateVersion = "24.11"; # Did you read the comment?
+  system.stateVersion = "25.05"; # Did you read the comment?
 
 }

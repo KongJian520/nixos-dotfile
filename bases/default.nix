@@ -9,7 +9,7 @@
     ./display-manager.nix
     ./bluetooth.nix
     ./configuration.nix
-    ./nvidia.nix
+    ./gpu.nix
     ./audio.nix
     ./user.nix
     ./plymouth.nix

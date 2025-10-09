@@ -8,7 +8,7 @@
   hardware.graphics = {
     enable = true;
   };
-  services.xserver.videoDrivers = [ "nvidia" ];
+  services.xserver.videoDrivers = [ "nvidia" "modesetting"];
   environment.systemPackages = with pkgs; [
     (writeShellScriptBin "nvidia-offload" ''
       export __NV_PRIME_RENDER_OFFLOAD=1

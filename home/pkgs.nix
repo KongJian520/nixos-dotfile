@@ -9,7 +9,7 @@
     qbittorrent
     wpsoffice-cn
     qq
-    wechat-uos
+ #   wechat-uos
     yazi
     gedit
     firefox
