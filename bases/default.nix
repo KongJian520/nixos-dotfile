@@ -5,7 +5,7 @@
     ./games
     ./editor
     ./virtualisation
-
+    ./ssh.nix
     ./display-manager.nix
     ./bluetooth.nix
     ./configuration.nix
