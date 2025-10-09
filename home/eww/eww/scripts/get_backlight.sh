@@ -1,10 +1,11 @@
 #!/bin/sh
 
 # 亮度文件路径
-BRIGHTNESS_FILE="/sys/class/backlight/nvidia_0/actual_brightness"
-MAX_BRIGHTNESS_FILE="/sys/class/backlight/nvidia_0/max_brightness"
-
-
+# nvidia
+pwd="/sys/class/backlight/intel_backlight"
+#intel
+BRIGHTNESS_FILE="$pwd/actual_brightness"
+MAX_BRIGHTNESS_FILE="$pwd/max_brightness"
 doing() {
     brightness=$(cat "$BRIGHTNESS_FILE")
     max_brightness=$(cat "$MAX_BRIGHTNESS_FILE")
