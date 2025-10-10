@@ -4,11 +4,11 @@
     enable = true;
     ports = [ 22 ];
     settings = {
-      PasswordAuthentication = true;
+      PasswordAuthentication = false;
       AllowUsers = [ "kongjian" ]; # Allows all users by default. Can be [ "user1" "user2" ]
       UseDns = true;
       X11Forwarding = true;
-      PermitRootLogin = "prohibit-password"; # "yes", "without-password", "prohibit-password", "forced-commands-only", "no"
+      PermitRootLogin = "no"; # "yes", "without-password", "prohibit-password", "forced-commands-only", "no"
     };
   };
 }

@@ -20,7 +20,7 @@
       exec "$@"
     '')
   ];
-
+nixpkgs.config.nvidia.acceptLicense = true;
 
   hardware.nvidia = {
     modesetting.enable = true;
@@ -28,7 +28,7 @@
     powerManagement.finegrained = false;
     open = false;
     nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.latest;
+    package = config.boot.kernelPackages.nvidiaPackages.legacy_470;
     prime.offload.enable = true;
     prime.intelBusId = "PCI:0:2:0";
     prime.nvidiaBusId = "PCI:1:0:0";
