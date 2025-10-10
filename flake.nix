@@ -30,6 +30,7 @@
       home-manager,
       nur,
       nixvim,
+      vscode-server,
       ...
     }@inputs:
     {
@@ -37,6 +38,8 @@
         system = "x86_64-linux";
         modules = [
           nur.modules.nixos.default
+          vscode-server.nixosModules.default
+          ./home/code/codeserver.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
