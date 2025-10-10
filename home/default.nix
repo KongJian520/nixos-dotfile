@@ -20,6 +20,7 @@
     ./nautilus
     ./pkgs.nix
     ./thunderbird
+    ./fcitx5
   ];
   home.username = "kongjian";
   home.homeDirectory = "/home/kongjian";
@@ -45,7 +46,6 @@
     "Xft.dpi" = 144;
   };
 
-
   # git 相关配置
   programs.git = {
     enable = true;
@@ -65,7 +65,6 @@
     shellAliases = {
     };
   };
-
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
