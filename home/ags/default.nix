@@ -11,7 +11,7 @@
   ];
   home.file.".config/ags/" = {
     # source = ./config;
-    source = inputs.self + "/home/ags/config";
+    # source = inputs.self + "/home/ags/config";
     recursive = true; # 递归整个文件夹
   };
 }
