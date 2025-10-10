@@ -20,7 +20,7 @@
     ./nautilus
     ./pkgs.nix
     ./thunderbird
-    ./fcitx5
+    # ./fcitx5
   ];
   home.username = "kongjian";
   home.homeDirectory = "/home/kongjian";
