@@ -20,6 +20,5 @@
     ./udisks.nix
     ./wine.nix
     ./zsh.nix
-    ./nix.nix
   ];
 }

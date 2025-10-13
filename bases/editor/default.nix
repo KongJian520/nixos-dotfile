@@ -9,6 +9,10 @@
     ./jdk.nix
     # ./rust.nix
   ];
+    nixpkgs.overlays = [
+    (import ./jetbrains-vmoptions.nix)
+  ];
+
   environment.systemPackages = with pkgs; [
     direnv
     python3Full
