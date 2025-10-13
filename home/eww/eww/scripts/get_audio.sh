@@ -47,7 +47,7 @@ if command -v pactl >/dev/null 2>&1; then
   done
 else
   # 没有 pactl 时，wpctl 无原生日志订阅，这里采用轮询
-  while sleep 1; do
+  while true; do
     get_current_volume
   done
 fi
