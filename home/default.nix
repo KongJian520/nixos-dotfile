@@ -15,7 +15,8 @@
     # ./ags
     ./mako
     ./alacritty
-    ./nixvim
+    # ./nixvim
+    ./neovim
     ./thunar
     ./nautilus
     ./pkgs.nix
