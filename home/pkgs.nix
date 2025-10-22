@@ -9,6 +9,7 @@
     qbittorrent
     wpsoffice-cn
     qq
+    wemeet
 #   wechat-uos
     yazi
     gedit

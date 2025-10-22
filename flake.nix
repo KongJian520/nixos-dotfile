@@ -13,6 +13,10 @@
     hyprland = {
       url = "github:hyprwm/Hyprland";
     };
+    hyprgrass = {
+      url = "github:horriblename/hyprgrass";
+      inputs.hyprland.follows = "hyprland";
+    };
     nur = {
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";

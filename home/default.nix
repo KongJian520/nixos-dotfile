@@ -15,7 +15,6 @@
     # ./ags
     ./mako
     ./alacritty
-    # ./nixvim
     ./neovim
     ./thunar
     ./nautilus
