@@ -10,6 +10,7 @@
     wpsoffice-cn
     qq
     wemeet
+    obs
 #   wechat-uos
     yazi
     gedit

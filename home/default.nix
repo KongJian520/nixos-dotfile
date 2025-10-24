@@ -9,6 +9,7 @@
   imports = [
     ./hyprland
     ./code
+    ./obs
     # ./iamb
     ./kitty
     ./eww

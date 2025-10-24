@@ -21,6 +21,10 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    kongjiannurrepo = {
+      url = "github:KongJian520/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -35,6 +39,7 @@
       nur,
       nixvim,
       vscode-server,
+      kongjiannurrepo,
       ...
     }@inputs:
     {

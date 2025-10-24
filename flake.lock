@@ -481,6 +481,26 @@
         "type": "github"
       }
     },
+    "kongjiannurrepo": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1761118533,
+        "narHash": "sha256-FS3+HKGWmJKVFbLGEnqH2lntIVXQYjocZyMgfgHx9tQ=",
+        "owner": "KongJian520",
+        "repo": "NUR",
+        "rev": "45578f49c1de68a1931e6e2a5800d1f7f099ac40",
+        "type": "github"
+      },
+      "original": {
+        "owner": "KongJian520",
+        "repo": "NUR",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1739020877,
@@ -621,6 +641,7 @@
         "home-manager": "home-manager",
         "hyprgrass": "hyprgrass",
         "hyprland": "hyprland",
+        "kongjiannurrepo": "kongjiannurrepo",
         "nixpkgs": "nixpkgs_2",
         "nixvim": "nixvim",
         "nur": "nur",
