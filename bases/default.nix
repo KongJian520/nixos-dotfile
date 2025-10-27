@@ -20,5 +20,6 @@
     ./udisks.nix
     ./wine.nix
     ./zsh.nix
+    ./easytier.nix
   ];
 }
