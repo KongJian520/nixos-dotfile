@@ -3,11 +3,18 @@
   services.greetd = {
     enable = true;
     settings = rec {
-      initial_session = {
-        command = "${pkgs.hyprland}/bin/hyprland";
-        user = "kongjian";
+      sessions = {
+        niri = {
+          command = "${pkgs.niri}/bin/niri"; # 或改為 "${pkgs.niri}/bin/niri" 若有對應套件
+          user = "kongjian";
+        };
+        hyprland = {
+          command = "${pkgs.hyprland}/bin/hyprland";
+          user = "kongjian";
+        };
       };
-      default_session = initial_session;
+      initial_session = sessions.niri;
+      default_session = sessions.niri;
     };
   };
   # services.displayManager = {

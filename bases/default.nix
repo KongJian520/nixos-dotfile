@@ -1,7 +1,7 @@
 { lib, pkgs, ... }:
 {
   imports = [
-    ./easytier
+
     ./hacker
     ./games
     ./editor
@@ -21,6 +21,6 @@
     ./udisks.nix
     ./wine.nix
     ./zsh.nix
-    
+    ./easytier
   ];
 }

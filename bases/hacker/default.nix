@@ -11,6 +11,7 @@
     seclists
     wireshark
     testdisk
+    metasploit
   ];
   users.groups.wireshark.members = [ "kongjian" ];
   security.pki.certificateFiles = [ ./cer/orochi-dev.pem ];

@@ -3,7 +3,8 @@
   home.packages = with pkgs; [
     (flameshot.override { enableWlrSupport = true; })
     direnv
-    ventoy-bin-full
+    # ventoy-bin-full
+    remmina
     thunderbird
     ags
     qbittorrent
@@ -49,6 +50,7 @@
     #   gnutar
     #   gawk
     zstd
+    remmina
     #   gnupg
 
     #   # nix related

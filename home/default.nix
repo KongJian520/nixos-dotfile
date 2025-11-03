@@ -8,6 +8,7 @@
 {
   imports = [
     ./hyprland
+    ./niri
     ./code
     ./obs
     # ./iamb

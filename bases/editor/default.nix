@@ -15,7 +15,7 @@
 
   environment.systemPackages = with pkgs; [
     direnv
-    python3Full
+    # python3Full
     uv
     jetbrains.clion
     jetbrains.idea-ultimate
