@@ -22,6 +22,8 @@
     jetbrains.pycharm-professional
     jetbrains.webstorm
     jetbrains.rust-rover
+
+    lua-language-server
   ];
 
 }

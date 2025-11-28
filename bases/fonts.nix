@@ -5,7 +5,7 @@
   fonts.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk-sans
-    noto-fonts-emoji
+    noto-fonts-color-emoji
     noto-fonts-cjk-serif
     wqy_zenhei # 添加文泉驿字体
     liberation_ttf

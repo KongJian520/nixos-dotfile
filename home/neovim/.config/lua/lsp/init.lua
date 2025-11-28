@@ -1,0 +1,6 @@
+local lua_ls_opts = require('lsp.lua_ls')
+local rust_analyzer_opts = require('lsp.rust')
+vim.lsp.config('lua_ls', lua_ls_opts)
+vim.lsp.enable('lua_ls')
+vim.lsp.config('rust-analyzer', rust_analyzer_opts)
+vim.lsp.enable('rust-analyzer')

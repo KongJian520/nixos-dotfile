@@ -1,5 +1,11 @@
-{ pkgs, ... }:
 {
+  pkgs,
+  config,
+  services,
+  ...
+}:
+{
+  programs.niri.enable = true;
   services.greetd = {
     enable = true;
     settings = rec {
@@ -13,8 +19,8 @@
           user = "kongjian";
         };
       };
-      initial_session = sessions.niri;
-      default_session = sessions.niri;
+      initial_session = sessions.hyprland;
+      default_session = sessions.hyprland;
     };
   };
   # services.displayManager = {

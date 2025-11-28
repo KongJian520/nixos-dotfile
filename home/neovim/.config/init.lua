@@ -1,3 +1,5 @@
-require("config.keybind")
+
 require("config.lazy")
-require("config.theme")
+-- Load LSP configuration (we use nvim-lspconfig)
+require("lsp")
+require("config.keybind")
