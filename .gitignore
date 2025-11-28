@@ -1,0 +1,4 @@
+# Ignore local sensitive proxy config
+bases/proxy/config.yaml
+
+# You can add other local-only files here
