@@ -8,6 +8,8 @@ in
 {
   services.mihomo = {
     enable = true;
-    configFile = ./config.yaml;
+    # Prefer the local `config.yaml` if present, otherwise use the example template.
+    configFile = if builtins.pathExists ./config.yaml then ./config.yaml
+                 else ./config.yaml.example;
   };
 }
