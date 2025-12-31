@@ -50,10 +50,11 @@
   # git 相关配置
   programs.git = {
     enable = true;
-    userName = "KongJianGhost";
-    userEmail = "2501491361@qq.com";
+    settings.user = {
+      email = "2501491361@qq.com";
+      name = "KongJianGhost";
+    };
   };
-
   programs.bash = {
     enable = true;
     enableCompletion = true;

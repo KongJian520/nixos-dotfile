@@ -18,11 +18,10 @@
     # python3Full
     uv
     jetbrains.clion
-    jetbrains.idea-ultimate
-    jetbrains.pycharm-professional
+    jetbrains.idea
+    jetbrains.pycharm
     jetbrains.webstorm
     jetbrains.rust-rover
-
     lua-language-server
   ];
 

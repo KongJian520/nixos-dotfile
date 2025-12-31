@@ -8,6 +8,8 @@
   home.packages = with pkgs; [
     # hyprls
     # gwenview
+    screen
+    minicom
     hyprlock
     hypridle
     dconf
