@@ -22,6 +22,7 @@
     ./pkgs.nix
     ./thunderbird
     # ./fcitx5
+    ./quickshell
   ];
   home.username = "kongjian";
   home.homeDirectory = "/home/kongjian";
