@@ -23,6 +23,7 @@
     jetbrains.webstorm
     jetbrains.rust-rover
     lua-language-server
+    qt6.qtdeclarative
   ];
 
 }

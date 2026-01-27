@@ -4,7 +4,14 @@
     (flameshot.override { enableWlrSupport = true; })
     direnv
     imhex
+
+    gimp
+    obsidian
+    todesk
+    picocom
+
     # ventoy-bin-full
+    telegram-desktop
     remmina
     thunderbird
     ags

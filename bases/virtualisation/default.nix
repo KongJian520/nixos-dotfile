@@ -1,6 +1,8 @@
 { pkgs, ... }:
 {
-imports=[./docker-compose];
+  imports = [ ./docker-compose ];
+
+  
   # Enable common container config files in /etc/containers
   virtualisation.containers.enable = true;
   # virtualisation.vmware.host.enable = true;
