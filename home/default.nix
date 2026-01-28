@@ -23,6 +23,7 @@
     ./thunderbird
     # ./fcitx5
     ./quickshell
+    ./xdg.nix
   ];
   home.username = "kongjian";
   home.homeDirectory = "/home/kongjian";
