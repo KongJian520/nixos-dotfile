@@ -60,6 +60,42 @@
       };
     };
   };
+
+  programs.ssh = {
+    enable = true;
+    enableDefaultConfig = false;
+    matchBlocks = {
+      "github.com" = {
+        # 使用你确认的 7890 mixed 端口，走 SOCKS5 协议 (-X 5)
+        proxyCommand = "${pkgs.netcat}/bin/nc -X 5 -x 127.0.0.1:7890 %h %p";
+      };
+      "*" = {
+        # 1. 保持长连接 (防止因一段时间没操作被服务器踢掉)
+        # 每 60 秒发一个心跳包，如果连续 3 次没回应才断开
+        extraOptions = {
+          ServerAliveInterval = "60";
+          ServerAliveCountMax = "3";
+
+          # 2. 自动接受新的主机指纹 (慎用，但对于经常重装系统的内网机器很方便)
+          # StrictHostKeyChecking = "ask";
+
+          # 3. 压缩传输 (在网络环境较差时加速，但在高速内网反而会浪费 CPU)
+          Compression = "yes";
+
+          # 4. 解决 SSH 连接缓慢的问题
+          # 禁用 GSSAPI 认证，很多服务器不支持它，开启会导致握手时卡顿数秒
+          GSSAPIAuthentication = "no";
+        };
+
+        # 5. 自动复用连接 (极大加快同一个服务器的第二次连接速度)
+        # 它会创建一个 socket 文件，后续连接直接复用第一个通道，无需重复握手
+        controlMaster = "auto";
+        controlPath = "~/.ssh/master-%r@%h:%p";
+        controlPersist = "10m"; # 即使主连接关了，通道也保持 10 分钟
+      };
+    };
+  };
+
   programs.bash = {
     enable = true;
     enableCompletion = true;

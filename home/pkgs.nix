@@ -51,6 +51,7 @@
     #   ldns # replacement of `dig`, it provide the command `drill`
     #   aria2 # A lightweight multi-protocol & multi-source command-line download utility
     #   socat # replacement of openbsd-netcat
+    netcat-openbsd # needed for SSH ProxyCommand to mihomo
 
     #   ipcalc  # it is a calculator for the IPv4/v6 addresses
 
@@ -91,6 +92,8 @@
     #   ethtool
     #   pciutils # lspci
     #   usbutils # lsusb
+    
+
   ];
 
 }
