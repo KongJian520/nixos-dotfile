@@ -5,7 +5,11 @@
   config,
   ...
 }:
+let
+  niriPath = "${config.home.homeDirectory}/.nixos/home/niri/config/";
+in
 {
+  xdg.configFile."niri".source = config.lib.file.mkOutOfStoreSymlink niriPath;
   programs.swaylock = {
     enable = true;
     settings = {
@@ -14,10 +18,5 @@
       ring-color = "ffff00"; # 锁定环的颜色
     };
   };
-  programs.niri.enable = true;
-  home.file.".config/niri/" = {
-    source = ./config;
-    # source = inputs.self + "/home/niri/config";
-    recursive = true; # 递归整个文件夹
-  };
+
 }

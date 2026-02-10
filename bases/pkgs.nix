@@ -14,5 +14,6 @@
     nix-index
     nix-tree
     ccze
+    gh
   ];
 }

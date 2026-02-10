@@ -10,6 +10,7 @@
     ./hyprland
     ./code
     ./obs
+    ./niri
     # ./iamb
     ./kitty
     ./eww
@@ -52,9 +53,11 @@
   # git 相关配置
   programs.git = {
     enable = true;
-    settings.user = {
-      email = "2501491361@qq.com";
-      name = "KongJianGhost";
+    settings = {
+      user = {
+        email = "2501491361@qq.com";
+        name = "KongJianGhost";
+      };
     };
   };
   programs.bash = {
